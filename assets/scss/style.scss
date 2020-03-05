@@ -1,8 +1,67 @@
 // Website theme/bootstrap
 
-
-
-
+$theme-colors:(
+	"primary": #03440C,
+	"secondary": #386C0B,
+	);
 
 // import bootstrap scss
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+$darkgreen: #041A0A;
+$neongreen: #04E824;
+$graywhite: #F3FCF0;
+
+.background{
+	background-image: url("./../images/landing.jpg");
+	top: 0;
+    right: 0;
+    // bottom: 50px;
+    left: 0;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron{
+	background-color: transparent;
+
+	.welcome{
+		margin-top: 50px;
+	}
+}
+
+.navbar {
+	.navbar-toggler-icon{
+	color: $white;
+	}
+
+	.navbar-nav{
+		.nav-item.active .nav-link{
+			color:$white;	
+			border: 1px solid $graywhite;
+		}
+
+		.nav-item .nav-link{
+			color: $graywhite;
+
+			&:active{
+				// background-color: $graywhite;
+				color: $darkgreen;
+			}
+		}
+	}
+}
+
+.card-deck{
+
+
+}
+
+body{
+	background-color: $graywhite;
+	position: relative;
+}
+
+footer{
+	position: absolute;
+}
