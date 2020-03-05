@@ -12,24 +12,7 @@ $darkgreen: #041A0A;
 $neongreen: #04E824;
 $graywhite: #F3FCF0;
 
-.background{
-	background-image: url("./../images/landing.jpg");
-	top: 0;
-    right: 0;
-    // bottom: 50px;
-    left: 0;
-    background-size: cover;
-    height: 100vh;
-}
-
-.jumbotron{
-	background-color: transparent;
-
-	.welcome{
-		margin-top: 50px;
-	}
-}
-
+// ALL PAGES
 .navbar {
 	.navbar-toggler-icon{
 	color: $white;
@@ -52,16 +35,80 @@ $graywhite: #F3FCF0;
 	}
 }
 
-.card-deck{
-
-
-}
-
 body{
 	background-color: $graywhite;
 	position: relative;
 }
 
-footer{
-	position: absolute;
+.footer{
+	position:absolute;
+    width:100%;
+	margin:0; padding:0;
+	
+		.container .text {
+			display: flex;
+		   	justify-content: space-between;
+		   
+			   .icons{
+				   font-size: 20px;
+
+				   .icons .link{
+					   color: white;
+				   }
+				   
+			   }
+
+		}
+	}
+// LANDING PAGE or INDEX
+.background{
+	background-image: url("./../images/landing.jpg");
+	top: 0;
+    right: 0;
+    // bottom: 50px;
+    left: 0;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron{
+	background-color: transparent;
+	.welcome{
+		margin-top: 50px;
+	}
+}
+
+// ABOUT PAGE
+
+#about-page .MultiCarousel { 
+	float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; 
+}
+    .MultiCarousel .MultiCarousel-inner { 
+		transition: 1s ease all; float: left; 
+	}
+        .MultiCarousel .MultiCarousel-inner .item { 
+			float: left;
+		}
+        .MultiCarousel .MultiCarousel-inner .item > div { 
+			text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;
+		}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+		position:absolute; border-radius:50%;top:calc(50% - 20px); 
+	}
+    .MultiCarousel .leftLst { 
+		left:0; 
+	}
+    .MultiCarousel .rightLst { 
+		right:0; 
+	}
+		.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+			pointer-events: none; background:#ccc; 
+		}
+		
+// SERVICE PAGE
+#service-page .container1{
+	.card img.card-img-top{
+		height: 150px;
+		width: 150px;
+	}
 }

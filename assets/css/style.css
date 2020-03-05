@@ -9910,8 +9910,18 @@ body {
   position: relative;
 }
 
-footer {
+.footer {
   position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer .container .text {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .text .icons {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
