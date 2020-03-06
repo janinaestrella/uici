@@ -3,6 +3,7 @@
 $theme-colors:(
 	"primary": #03440C,
 	"secondary": #386C0B,
+	"white": #F3FCF0,
 	);
 
 // import bootstrap scss
@@ -14,11 +15,16 @@ $graywhite: #F3FCF0;
 
 // ALL PAGES
 .navbar {
-	.navbar-toggler-icon{
-	color: $white;
-	}
+	img {
+		width: 180px;
+		height: 50px;
 
+	}
+	.navbar-toggler-icon{
+		 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 	.navbar-nav{
+
 		.nav-item.active .nav-link{
 			color:$white;	
 			border: 1px solid $graywhite;
@@ -35,9 +41,36 @@ $graywhite: #F3FCF0;
 	}
 }
 
-body{
-	background-color: $graywhite;
+body {
+	// background-color: $graywhite;
 	position: relative;
+	// background: url("./../images/bg.jpg");
+
+	 /* The image used */
+  background-image: url("./../images/bg.jpg");
+
+  /* Set a specific height */
+  height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+h1.landing{
+	text-align: start;
+}
+
+
+.row {
+	background-color: $graywhite;
 }
 
 .footer{
@@ -60,6 +93,7 @@ body{
 
 		}
 	}
+
 // LANDING PAGE or INDEX
 .background{
 	background-image: url("./../images/landing.jpg");
@@ -84,7 +118,7 @@ body{
 	float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; 
 }
     .MultiCarousel .MultiCarousel-inner { 
-		transition: 1s ease all; float: left; 
+		transition: .5s ease all; float: left; 
 	}
         .MultiCarousel .MultiCarousel-inner .item { 
 			float: left;
@@ -104,11 +138,70 @@ body{
 		.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
 			pointer-events: none; background:#ccc; 
 		}
+
+// #about-page .row {
+// 	background-color: $graywhite;
+// }
+
+#about-page .clientcard{
+		
+		height: 200px;
+		width: 150px;
+		margin: 10px 0;
+	}
+		.card-img{
+		width: 100px;
+}	
 		
 // SERVICE PAGE
-#service-page .container1{
-	.card img.card-img-top{
-		height: 150px;
-		width: 150px;
+#service-page .container{
+	.card-btn{
+		height: 250px;
+		// width: 400px;
+		border: none;
+		// white-space: normal;
+		margin: 5px;
+	}
+
+	.card-img{
+		height: 250px;
+		width: 400px;
+		padding: 0;
+	}
+
+	.card-img :hover{
+		opacity: 0.5;
+		cursor: pointer;
+	}
+
+	.card-img-overlay{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
+
+// PROJECTS PAGE
+#projects-page .container{
+	.carousel-inner{
+		img{
+			height: 50vh;
+			object-fit: cover;
+		}
+
+	}
+	}
+
+// CONTACT PAGE
+#contact-page .mapouter{
+	position:relative;
+	text-align:right;
+	height:505px;
+	width:454px;
+}
+	.gmap_canvas {
+		overflow:hidden;
+		background:none!important;
+		height:505px;
+		// width:454px;
+	}
