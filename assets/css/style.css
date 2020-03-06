@@ -10043,6 +10043,14 @@ body {
   background-size: cover;
 }
 
+h1 {
+  text-align: center;
+}
+
+h1.landing {
+  text-align: start;
+}
+
 .row {
   background-color: #F3FCF0;
 }
@@ -10157,6 +10165,19 @@ body {
 #projects-page .container .carousel-inner img {
   height: 50vh;
   object-fit: cover;
+}
+
+#contact-page .mapouter {
+  position: relative;
+  text-align: right;
+  height: 505px;
+  width: 454px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 505px;
 }
 
 /*# sourceMappingURL=style.css.map */
