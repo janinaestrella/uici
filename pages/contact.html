@@ -25,7 +25,7 @@
 
   <!-- NAVIGATON -->
 
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top fixed-top w-100%">
       <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.JPG"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,7 @@
 
 <div class="container mb-3">
   <div class="row">
-    <div class="mapouter col-12 col-lg-6">
+    <div class="mapouter col-12 col-md-6">
         <div class="gmap_canvas">
           <iframe width="454" height="505" id="gmap_canvas" 
           src="https://maps.google.com/maps?q=urban%20integrated&t=&z=17&ie=UTF8&iwloc=&output=embed" 
@@ -70,24 +70,26 @@
         </div>
     </div>
 
-    <div class="col-12 col-lg-6 ">
+    <div class="col-12 col-md-6 ">
       <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="name" class="form-control" id="name">
-
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email>
-        </div>
-
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1"></label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
-          </textarea>
-        </div>
-
-        <button class="btn mx-auto" name="submit">Sumbit</button>
+        <input name="name" type="text" placeholder="Name" id="name" required />
+        <input name="email" type="email" placeholder="Email" id="email" required />
+        <textarea name="text" placeholder="Message"></textarea>
+        <input type="submit" value="Send" id="button-blue" /> 
       </form>
+
+    <div class="info my-3 p-2">
+        <h3>Contact Info</h3>
+        <hr>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> G/F, UICI Corporate Building, 8 Lands St., Vasra, Quezon City 1128 Philippines
+          <br>
+          <i class="fas fa-phone-alt"></i> +632 9277547; +632 9276705 +632 9297902
+          <br>
+          <i class="fas fa-envelope"></i> busdevuici@gmail.com
+        </p>
+        </div>
+
     </div>
   </div>
 </div>

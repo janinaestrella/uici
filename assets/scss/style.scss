@@ -3,7 +3,7 @@
 $theme-colors:(
 	"primary": #03440C,
 	"secondary": #386C0B,
-	"white": #F3FCF0,
+	"light": #F3FCF0,
 	);
 
 // import bootstrap scss
@@ -12,8 +12,18 @@ $theme-colors:(
 $darkgreen: #041A0A;
 $neongreen: #04E824;
 $graywhite: #F3FCF0;
+$lightgreen: #386C0B;
 
 // ALL PAGES
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Domine', serif;
+}
+
+body{	
+	font-family: 'Roboto', sans-serif;
+
+}
 .navbar {
 	img {
 		width: 180px;
@@ -21,7 +31,7 @@ $graywhite: #F3FCF0;
 
 	}
 	.navbar-toggler-icon{
-		 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 	.navbar-nav{
 
@@ -34,7 +44,6 @@ $graywhite: #F3FCF0;
 			color: $graywhite;
 
 			&:active{
-				// background-color: $graywhite;
 				color: $darkgreen;
 			}
 		}
@@ -50,7 +59,7 @@ body {
   background-image: url("./../images/bg.jpg");
 
   /* Set a specific height */
-  height: 500px; 
+  height: 100px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -113,41 +122,11 @@ h1.landing{
 }
 
 // ABOUT PAGE
-
-#about-page .MultiCarousel { 
-	float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; 
-}
-    .MultiCarousel .MultiCarousel-inner { 
-		transition: .5s ease all; float: left; 
-	}
-        .MultiCarousel .MultiCarousel-inner .item { 
-			float: left;
-		}
-        .MultiCarousel .MultiCarousel-inner .item > div { 
-			text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;
-		}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { 
-		position:absolute; border-radius:50%;top:calc(50% - 20px); 
-	}
-    .MultiCarousel .leftLst { 
-		left:0; 
-	}
-    .MultiCarousel .rightLst { 
-		right:0; 
-	}
-		.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
-			pointer-events: none; background:#ccc; 
-		}
-
-// #about-page .row {
-// 	background-color: $graywhite;
-// }
-
 #about-page .clientcard{
 		
 		height: 200px;
 		width: 150px;
-		margin: 10px 0;
+		margin: 10px;
 	}
 		.card-img{
 		width: 100px;
@@ -155,12 +134,13 @@ h1.landing{
 		
 // SERVICE PAGE
 #service-page .container{
+
 	.card-btn{
 		height: 250px;
-		// width: 400px;
 		border: none;
-		// white-space: normal;
+		white-space: nowrap;
 		margin: 5px;
+		cursor: pointer;
 	}
 
 	.card-img{
@@ -178,8 +158,17 @@ h1.landing{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		
+		.card-title{
+			border-radius: 1px;
+			font-size: 40px;
+			border: 2px solid $graywhite;
+			font-weight: 2rem;
+			padding: 5px;
+			background-color: rgba(12, 112, 29, 0.37);
+		}
 	}
-}
+	}
 
 // PROJECTS PAGE
 #projects-page .container{
@@ -189,8 +178,7 @@ h1.landing{
 			object-fit: cover;
 		}
 	}
-	h4 { font-family: 'Open Sans'; margin: 0;}
-
+	
 	.modal,body.modal-open {
 		padding-right: 0!important
 	}
@@ -203,14 +191,6 @@ h1.landing{
 		overflow-y: auto
 	}
 	
-	// .modal-footer {
-	// 	display: flex;
-	// 	justify-content: flex-start;
-	// 	.btn {
-	// 		position: absolute;
-	// 		right: 10px;
-	// 	}
-	// }
 
 	.read-more-state {
 		display: none;
@@ -253,12 +233,18 @@ h1.landing{
 		padding: 2%;
 		// border: 1px solid $darkgreen;
 	  }
+
+	  h4.card-title{
+		background: whitesmoke;
+		color: black;
+		border: 1px solid whitesmoke;  
+	  }
 	  
 	  p.card-text {
 		padding: 2%;
-		background: #fff9c6;
-		color: #c7b27e;
-		border: 1px solid #fce29f;
+		background: whitesmoke;
+		color: black;
+		border: 1px solid whitesmoke;
 		border-radius: .25em;
 	  }
 	
@@ -267,13 +253,93 @@ h1.landing{
 // CONTACT PAGE
 #contact-page .mapouter{
 	position:relative;
-	text-align:right;
+	text-align:center;
 	height:505px;
-	width:454px;
-}
+	width:100%;
+
 	.gmap_canvas {
 		overflow:hidden;
 		background:none!important;
 		height:505px;
 		// width:454px;
 	}
+
+	
+}
+	
+#contact-page form {
+	width: 100%;
+	// height: 100%;
+	background: #f1f1f1;
+	// margin: 5% 33%;
+	padding: 2%;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	display: block;
+	// margin-top: 2em;
+}
+  
+
+form input, textarea {
+	 border-radius: 2px;
+	width: 90%;
+  display: block;
+	font-size: 16px;
+	font-weight: 300;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+	border: 1px solid #eceff1;
+	padding: 15px;
+	z-index: 1;
+  position: relative;
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  }
+  
+  [type="submit"] {
+	border: 1px solid #2f5bb7;
+  color: #fff;
+   padding: 10px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+	margin-top: 12px;
+	font-weight: 500;
+  }
+  
+  [type="submit"]:hover {
+  border-color: #c6c6c6;
+  color: #fff;
+  cursor: pointer;
+  -o-transition: all 0.2s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #4c8ffc;
+  background-image: -webkit-linear-gradient(top,#4c8ffc,#4889f0);
+  background-image: -moz-linear-gradient(top,#4c8ffc,#4889f0);
+  background-image: -ms-linear-gradient(top,#4c8ffc,#4889f0);
+  background-image: -o-linear-gradient(top,#4c8ffc,#4889f0);
+  background-image: linear-gradient(top,#4c8ffc,#4889f0);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	}
+
+#contact-page div.info{
+	display: block;
+	background-color: $graywhite ;
+	border: 1px solid #eceff1;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	padding: 2%;
+	border-radius: 3px;
+
+	i.fas{
+		font-size: 20px;
+	}
+}	
