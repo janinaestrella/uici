@@ -10162,9 +10162,65 @@ h1.landing {
   align-items: center;
 }
 
+#projects-page .container {
+  /* Other style */
+}
 #projects-page .container .carousel-inner img {
   height: 50vh;
   object-fit: cover;
+}
+#projects-page .container h4 {
+  font-family: "Open Sans";
+  margin: 0;
+}
+#projects-page .container .modal, #projects-page .container body.modal-open {
+  padding-right: 0 !important;
+}
+#projects-page .container body.modal-open {
+  overflow: auto;
+}
+#projects-page .container body.scrollable {
+  overflow-y: auto;
+}
+#projects-page .container .read-more-state {
+  display: none;
+}
+#projects-page .container .read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+#projects-page .container .read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+#projects-page .container .read-more-state ~ .read-more-trigger:before {
+  content: "Show more";
+}
+#projects-page .container .read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less";
+}
+#projects-page .container .read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+}
+#projects-page .container body {
+  padding: 2%;
+}
+#projects-page .container p.card-text {
+  padding: 2%;
+  background: #fff9c6;
+  color: #c7b27e;
+  border: 1px solid #fce29f;
+  border-radius: 0.25em;
 }
 
 #contact-page .mapouter {
