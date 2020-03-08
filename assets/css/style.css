@@ -9890,15 +9890,64 @@ body {
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-nav .nav-item.active .nav-link {
-  color: #fff;
-  border: 1px solid #F3FCF0;
+.navbar .navbar-nav {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
 }
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #F3FCF0;
+.navbar .navbar-nav .nav-link.active {
+  color: white;
+  border-bottom: 3px solid white;
 }
-.navbar .navbar-nav .nav-item .nav-link:active {
-  color: #041A0A;
+.navbar .navbar-nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.navbar .navbar-nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+.navbar .navbar-nav a {
+  padding: 0.5em 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+.navbar .navbar-nav a::before,
+.navbar .navbar-nav a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.navbar .navbar-nav a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: translate(-100%, 50%);
+}
+.navbar .navbar-nav a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  transform: translate(100%, -50%);
+}
+.navbar .navbar-nav a:hover:before,
+.navbar .navbar-nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.navbar .navbar-nav a:hover {
+  color: white;
 }
 .navbar a {
   color: white;
@@ -9957,9 +10006,14 @@ h1.landing {
 }
 .footer .container .text .icons {
   font-size: 20px;
-}
-.footer .container .text .icons .icons .link {
   color: white;
+}
+.footer .container .text .icons .fab {
+  margin: 0 2px;
+  transition: all 0.2s ease-in-out;
+}
+.footer .container .text .icons .fab:hover {
+  transform: scale(1.5);
 }
 
 .background {

@@ -34,19 +34,82 @@ body{
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 	.navbar-nav{
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
 
-		.nav-item.active .nav-link{
-			color:$white;	
-			border: 1px solid $graywhite;
+		.nav-link.active {
+			color: white;
+			border-bottom: 3px solid white;
 		}
 
-		.nav-item .nav-link{
-			color: $graywhite;
+// 		.nav-item.active .nav-link{
+// 			color:$white;	
+// 			border: 1px solid $graywhite;
+// 		}
 
-			&:active{
-				color: $darkgreen;
-			}
-		}
+// 		.nav-item .nav-link{
+// 			color: $graywhite;
+// &:active{
+// 				color: $darkgreen;
+	}
+
+	.navbar-nav * {
+		box-sizing: border-box;
+		transition: all .35s ease;
+	  }
+	  
+	  .navbar-nav li {
+		display: inline-block;
+		list-style: outside none none;
+		margin: .5em 1em;
+		padding: 0;
+	  }
+	  
+	  .navbar-nav a {
+		padding: .5em .8em;
+		color: rgba(255,255,255,.5);
+		position: relative;
+		text-decoration: none;
+		font-size: 20px;
+	  }
+	  
+	  .navbar-nav a::before,
+	  .navbar-nav a::after {
+		content: '';
+		height: 14px;
+		width: 14px;
+		position: absolute;
+		transition: all .35s ease;
+		opacity: 0;
+	  }
+	  
+	  .navbar-nav a::before {
+		content: '';
+		right: 0;
+		top: 0;
+		border-top: 3px solid $white;
+		border-right: 3px solid $white;
+		transform: translate(-100%, 50%);
+	  }
+	  
+	  .navbar-nav a:after {
+		content: '';
+		left: 0;
+		bottom: 0;
+		border-bottom: 3px solid white;
+		border-left: 3px solid white;
+		transform: translate(100%, -50%)
+	  }
+	  
+	  .navbar-nav a:hover:before,
+	  .navbar-nav a:hover:after{
+		transform: translate(0,0);
+		opacity: 1;
+	  }
+	  
+	  .navbar-nav a:hover {
+		color: white;
 	}
 
 	a{
@@ -120,22 +183,28 @@ h1.landing{
 		   
 			   .icons{
 				   font-size: 20px;
-
-				   .icons .link{
-					   color: white;
-				   }
+				   color: white;
 				   
-			   }
 
+				   .fab{
+					margin: 0 2px;
+				   transition: all .2s ease-in-out;
+
+        			&:hover {
+         		 	transform: scale(1.5);
+        			}
+				}	
+			}
 		}
+
+		
 	}
 
-// LANDING PAGE or INDEX
+// INDEX
 .background{
 	background-image: url("./../images/landing.jpg");
 	top: 0;
     right: 0;
-    // bottom: 50px;
     left: 0;
     background-size: cover;
     height: 100vh;
@@ -309,8 +378,8 @@ h1.landing{
 		border-radius: .25em;
 	  }
 	  
-	  /* Other style */ 
-	  body {
+	  
+	  /* Other style */ body {
 		padding: 2%;
 		// border: 1px solid $darkgreen;
 	  }
@@ -344,8 +413,6 @@ h1.landing{
 		height:505px;
 		// width:454px;
 	}
-
-	
 }
 	
 #contact-page form.contact {
