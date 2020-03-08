@@ -10092,7 +10092,7 @@ h1.landing {
   height: 505px;
 }
 
-#contact-page form {
+#contact-page form.contact {
   width: 100%;
   background: #f1f1f1;
   padding: 2%;
@@ -10101,7 +10101,7 @@ h1.landing {
   display: block;
 }
 
-form input, textarea {
+form.contact input, textarea {
   border-radius: 2px;
   width: 90%;
   display: block;
