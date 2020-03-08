@@ -9988,34 +9988,84 @@ h1.landing {
   width: 100px;
 }
 
-#service-page .container .card-btn {
+#service-page .container .hovereffect {
   height: 250px;
-  border: none;
-  white-space: nowrap;
-  margin: 5px;
-  cursor: pointer;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
 }
-#service-page .container .card-img {
+#service-page .container .hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#service-page .container .hovereffect:hover .overlay {
+  background-color: rgba(170, 170, 170, 0.4);
+}
+#service-page .container .hovereffect h2, #service-page .container .hovereffect img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#service-page .container .hovereffect img {
   height: 250px;
   width: 400px;
-  padding: 0;
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
-#service-page .container .card-img :hover {
-  opacity: 0.5;
-  cursor: pointer;
+#service-page .container .hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
-#service-page .container .card-img-overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#service-page .container .hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
 }
-#service-page .container .card-img-overlay .card-title {
-  border-radius: 1px;
-  font-size: 40px;
-  border: 2px solid #F3FCF0;
-  font-weight: 2rem;
-  padding: 5px;
-  background-color: rgba(12, 112, 29, 0.37);
+#service-page .container .hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 10px 0 0 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  height: 70%;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  padding: 70px;
+}
+#service-page .container .hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #projects-page .container {
