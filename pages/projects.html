@@ -15,40 +15,44 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/6e491a471f.js" crossorigin="anonymous"></script>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto:400,400i,700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/logo.jpg" type="image/gif">
+
   <title>UICI</title>
 </head>
 
 <body id="projects-page">
 
   <!-- NAVIGATON -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top fixed-top w-100%">
+    <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.JPG"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="./about.html">About Us</a></li>
+        <li><a class="nav-link" href="./service.html">Services</a></li>
+        <li><a class="nav-link active" href="#">Projects</a></li>
+        <li><a class="nav-link" href="./contact.html">Contact Us</a></li>
+      </ul>
 
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top">
-      <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.JPG"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./service.html">Services</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <form class="search d-flex  ml-auto">
+        <input class="form-control mr-sm-2 my-auto" type="search" placeholder="Search" aria-label="Search">
+          <a class="btn btn-secondary btn-circle btn-circle-sm m-1" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+      </form>
+    </div>
+  </nav>
 
   <!-- END OF NAVIGATON -->
 
-  <div class="container">
+  <div class="container mt-3">
     <div class="row">
       <div class="col-12">
         <h1 class="pt-3">Projects</h1>
@@ -57,9 +61,9 @@
   </div>
 
   <!-- START OF CAROUSEL -->
-  <div class="container">
+  <div class="container mb-3">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 bg-white pb-3">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -67,32 +71,28 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item" data-interval="1500">
               <img src="./../assets/images/houses.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>RESIDENTIAL</h5>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="1500">
               <img src="./../assets/images/airport.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>AIRPORTS</h5>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item active" data-interval="1500"> 
               <img src="./../assets/images/bridge.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>BRIDGES</h5>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="1500">
               <img src="./../assets/images/roads.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h5>ROADS</h5>
               </div>
             </div>
           </div>
@@ -110,11 +110,287 @@
   </div><!-- END OF CAROUSEL-->
 
   <!-- LIST OF PROJECTS -->
-  <div class="container">
+  <div class="container mb-3">
     <div class="row">
-      <div class="text col-12 ">
-        
+      <div class="text col-12 mt-3">
+        <h2 class="text-center">Featured Projects</h2>
       </div>
+
+      <div class="container ">
+        <div class="row">
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#mrt" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/mrtpic.png"></a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Consulting Services for MRT3 Systems for MRT3 Rehabilitation and 
+                    Capacity Expansion Project
+              
+              </h4>
+                  <p class="card-text color-gray-darker read-more-wrap">
+                    Services Provided :  Feasibility Study <br>
+                    Funding Agency: Government of the Philippines <br> 
+                    Implementing Agency: Department of Transportation – Metro Rail <br>
+                    Location:  Metro Manila, Philippines <br>
+                  </div>
+          </div>
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="mrt" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/mrtpic.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#airport1" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/airport1.png"></a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Mactan- Cebu Airport
+              </h4>
+                  <!-- <input type="checkbox" class="read-more-state" id="post-1" /> -->
+                  <p class="card-text color-gray-darker read-more-wrap">Independent Consultant for The Mactan-Cebu International Airport PPP Project</p>
+                    <!-- <label for="post-1" class="read-more-trigger"></label> -->
+                  </div>
+              <!-- </div>	 -->
+          </div>		
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="airport1" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/airport1.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>		
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#airport2" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/airport2.png"></a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Central Visayas Selected Airport Development Project 
+              </h4>
+                  <p class="card-text color-gray-darker read-more-wrap">
+                    Services Provided:  Detailed Engineering Design and Construction Supervision <br>
+                    Funding Agency:  Japan Bank for International Cooperation <br>
+                    Implementing Agency:  Department of Transportation and Communications <br>
+                    Location:  Central Visayas, Philippines <br>
+                  </div>
+          </div>		
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="airport2" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/airport2.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#bridge1" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/bridge1.png">
+              </a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">6th ADB-Assisted Project 
+
+              </h4>
+                  <!-- <input type="checkbox" class="read-more-state" id="post-1" /> -->
+                  <p class="card-text color-gray-darker read-more-wrap">Design and Construction Supervision of Five (5) Bridges: Binangbang, Budyawis, Ipil, and Malbug II bridge in 6PY-1, Patnongon-Culasi Section & Aguila Bridge in 6PY-2, Culasi-Nabas Section, Antique & Aklan, Philippines 
+                  </p>
+                    <!-- <label for="post-1" class="read-more-trigger"></label> -->
+                  </div>
+              <!-- </div>	 -->
+          </div>		
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="bridge1" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/bridge1.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#bridge2" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/bridge2.png"></a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">6th ADB-Assisted Project 
+              </h4>
+                  <input type="checkbox" class="read-more-state" id="post-1" />
+                  <p class="card-text color-gray-darker read-more-wrap">Design and Construction Supervision  of Contract Package P-NCR <span class="read-more-target">(replacement and reconstruction of three (3) bridges namely: Don Galo-La Huerta Bridge (75m-3span), Sevilla Bridge (60m-5span) & Tullahan Bridge (48m-4span)); Contract Package T-Zambales (two (2) replacement 
+                    bridges – Pamatawan Bridge – 53m  & Lipay Bridge – 106m); and Contract Package 4-Mindanao (retrofit of eleven (11) bridges and replacement of three (3) bridges). Philippines </span></p>
+                    <label for="post-1" class="read-more-trigger"></label>
+                  </div>
+              <!-- </div>	 -->
+          </div>		
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="bridge2" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/bridge2.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#bridge3" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/bridge3.png"></a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Preliminary Detailed Engineering for Marikina-Infanta Road Including Existing Gravel Surface Section
+              </h4>
+                  <!-- <input type="checkbox" class="read-more-state" id="post-1" /> -->
+                  <p class="card-text color-gray-darker read-more-wrap">
+                    Services Provided :  Preliminary Detailed Engineering <br>
+                    Funding Agency:  Government of the Philippines <br>
+                    Implementing Agency:  Department of Public Works and Highways, Region IV-A <br>
+                    Location:  Rizal, Laguna, and Quezon Provinces, Philippines <br>
+                  </p>
+                    <!-- <label for="post-1" class="read-more-trigger"></label> -->
+                  </div>
+              <!-- </div>	 -->
+          </div>		
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="bridge3" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/bridge3.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#road1" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/road1.png">
+              </a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Catarman–Calbayog via Lope de Vega & Iloilo East Coast-Capiz Roads Improvement Project
+              </h4>
+                  <p class="card-text color-gray-darker read-more-wrap">Design and Construction Supervision of CPs – 1 & 2 (82.82 km. Road const. w/ PCCP, const. & rehab. of Bridges & const. of drainage including protection works), Samar & Iloilo, Philippines
+                    JBIC Funded</p>
+                  </div>
+          </div>	
+
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="road1" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/road1.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#road2" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/road2.png">
+              </a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">Baguio-Aritao Road Improvement Project 
+              </h4>
+                  <!-- <input type="checkbox" class="read-more-state" id="post-1" /> -->
+                  <p class="card-text color-gray-darker read-more-wrap">Engineering Design and Construction Supervision of CPs - 1 & 2 Baguio–Pangawan, Kayapa & Pangawan, Kayapa–Aritao Sections (66 & 30 km. long PCCP, Reconst. of Bridges, & drainage & slope protection structures), Baguio & Aritao, Philippines  
+                    JBIC Funded	 </p>
+                    <!-- <label for="post-1" class="read-more-trigger"></label> -->
+                  </div>
+              <!-- </div>	 -->
+          </div>		
+
+           <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="road2" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/road2.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+            <a data-target="#road3" data-toggle="modal" href="#" class="color-gray-darker td-hover-none">
+              <!-- <div class="ba-0 tp-s"> -->
+                <img alt="Card image cap" class="card-img-top" src="../assets/images/road3.png">
+              </a>
+                <div class="card-body">
+                  <h4 class="card-title color-gray-darker">6th ADB-Assisted Road Project, Road Improvement Component
+
+              </h4>
+                  <!-- <input type="checkbox" class="read-more-state" id="post-1" /> -->
+                  <p class="card-text color-gray-darker read-more-wrap">Design and Construction Supervision of 6PY-1 & 2 Patnongon–Culasi–Nabas Road (113 km.long PCCP, const. of numerous bridges, RCBCs & instl’n. of RCPCs including protection works), Antique & Aklan, Philippines  
+                  </p>
+                    <!-- <label for="post-1" class="read-more-trigger"></label> -->
+                  </div>
+              <!-- </div>	 -->
+          </div>	
+          
+          <!-- modal -->
+          <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="road3" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-body mb-0 p-0">
+                  <img src="../assets/images/road3.png" alt="" style="width:100%">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
     </div>
   </div>
   <!-- END OF LIST OF PROJECTS -->
@@ -130,13 +406,13 @@
           <div class="icons mx-3">
             <a style="color:white" href="https://facebook.com"><i class="fab fa-facebook-square"></i></a>
             <a style="color:white" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-            <a style="color:white" href="https://facebook.com"><i class="fab fa-linkedin"></i></a>
+            <a style="color:white" href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-<!-- END OF FOOTER -->
+  <!-- END OF FOOTER -->
 
 
   <!-- Optional JavaScript -->
