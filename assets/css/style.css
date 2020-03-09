@@ -10009,15 +10009,15 @@ h1.landing {
 .footer .container .text p.reserved {
   font-size: 11px;
 }
-.footer .container .text p.reserved .icons {
+.footer .container .text .icons {
   font-size: 20px;
   color: white;
 }
-.footer .container .text p.reserved .icons .fab {
+.footer .container .text .icons .fab {
   margin: 0 2px;
   transition: all 0.2s ease-in-out;
 }
-.footer .container .text p.reserved .icons .fab:hover {
+.footer .container .text .icons .fab:hover {
   transform: scale(1.5);
 }
 
@@ -10043,6 +10043,9 @@ h1.landing {
 .jumbotron .tagline {
   font-size: 18px;
 }
+.jumbotron a.btn1:hover {
+  font-style: italic;
+}
 
 #about-page .clientcard {
   height: 200px;
@@ -10051,9 +10054,20 @@ h1.landing {
 }
 
 .card-img {
-  width: 100px;
+  width: 50%;
+  height: auto;
 }
 
+#logos > div img {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  #logos > div img {
+    width: 80%;
+    align-items: center;
+  }
+}
 #service-page .container .hovereffect {
   height: 250px;
   float: left;
