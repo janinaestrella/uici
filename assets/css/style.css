@@ -9879,8 +9879,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Domine", serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  background-image: url("./../images/bg.jpg");
+  position: relative;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .main-container {
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .navbar img {
@@ -9969,29 +9985,6 @@ body {
   line-height: 35px;
 }
 
-body {
-  background-image: url("./../images/bg.jpg");
-  position: relative;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body .main-container {
-  min-height: 100vh;
-  padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-h1 {
-  text-align: center;
-}
-
-h1.landing {
-  text-align: start;
-}
-
 .row {
   background-color: #F3FCF0;
 }
@@ -10013,6 +10006,9 @@ h1.landing {
   font-size: 20px;
   color: white;
 }
+.footer .container .text .icons a {
+  color: white;
+}
 .footer .container .text .icons .fab {
   margin: 0 2px;
   transition: all 0.2s ease-in-out;
@@ -10021,11 +10017,13 @@ h1.landing {
   transform: scale(1.5);
 }
 
-#landing-page.main-containerindex {
+#landing-page .landing {
+  text-align: start;
+}
+#landing-page .main-containerindex {
   min-height: 100vh;
 }
-
-.background {
+#landing-page .background {
   background-image: url("./../images/landing.jpg");
   top: 0;
   right: 0;
@@ -10033,41 +10031,31 @@ h1.landing {
   background-size: cover;
   height: 100vh;
 }
-
-.jumbotron {
+#landing-page .jumbotron {
   background-color: transparent;
 }
-.jumbotron .welcome {
+#landing-page .jumbotron .welcome {
   margin-top: 50px;
 }
-.jumbotron .tagline {
+#landing-page .jumbotron .tagline {
   font-size: 18px;
 }
-.jumbotron a.btn1:hover {
+#landing-page .jumbotron a.btn1:hover {
   font-style: italic;
 }
 
-#about-page .clientcard {
-  height: 200px;
-  width: 150px;
-  margin: 10px;
+#about-page .card-text-about {
+  text-align: justify;
+  text-justify: inter-word;
 }
-
-.card-img {
-  width: 50%;
+#about-page .card-img {
+  width: 30%;
   height: auto;
 }
-
-#logos > div img {
+#about-page #logos > div img {
   width: 100%;
 }
 
-@media (max-width: 576px) {
-  #logos > div img {
-    width: 80%;
-    align-items: center;
-  }
-}
 #service-page .container .hovereffect {
   height: 250px;
   float: left;
@@ -10147,6 +10135,9 @@ h1.landing {
   transform: scale(1);
   background-color: rgba(0, 0, 0, 0.4);
 }
+#service-page .container .modal-header {
+  text-align: center;
+}
 
 #projects-page .container {
   /* Other style */
@@ -10213,13 +10204,21 @@ h1.landing {
   height: 30vh;
   object-fit: cover;
 }
+#projects-page .container .modal-body > img {
+  width: 100%;
+}
 
+#contact-page .mapouter {
+  position: relative;
+  text-align: center;
+  height: 505px;
+  width: 100%;
+}
 #contact-page .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 505px;
 }
-
 #contact-page form.contact {
   width: 100%;
   background: #f1f1f1;
@@ -10228,8 +10227,7 @@ h1.landing {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   display: block;
 }
-
-form.contact input, textarea {
+#contact-page .contact input, #contact-page textarea {
   border-radius: 2px;
   width: 90%;
   display: block;
@@ -10249,8 +10247,7 @@ form.contact input, textarea {
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
 }
-
-[type=submit] {
+#contact-page [type=submit] {
   border: 1px solid #2f5bb7;
   color: #fff;
   padding: 10px;
@@ -10260,8 +10257,7 @@ form.contact input, textarea {
   margin-top: 12px;
   font-weight: 500;
 }
-
-[type=submit]:hover {
+#contact-page [type=submit]:hover {
   border-color: #c6c6c6;
   color: #fff;
   cursor: pointer;
@@ -10279,8 +10275,7 @@ form.contact input, textarea {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-
-#contact-page div.info {
+#contact-page #contact-page div.info {
   display: block;
   background-color: #F3FCF0;
   border: 1px solid #eceff1;
@@ -10288,8 +10283,15 @@ form.contact input, textarea {
   padding: 2%;
   border-radius: 3px;
 }
-#contact-page div.info i.fas {
+#contact-page #contact-page div.info i.fas {
   font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  #logos > div img {
+    width: 80%;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

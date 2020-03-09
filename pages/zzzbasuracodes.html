@@ -1,136 +1,98 @@
-<!-- SERVICE PAGE -->
-  <!-- START OF CARDS -->
-  <div class="container bg-white">
-    <div class="row mb-3">
-      <!-- ENGINEERING BUTTON -->
-      <div class="col-12 col-lg-6">
-        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-engineering">
-          <img class="card-img w-100" src="../assets/images/engineering-min.jpg"  alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">ENGINEERING</h5>
-          </div>
-        </div>
-      </div>
+@import './../assets/node_modules/bootstrap/scss/bootstrap';
 
-      <!-- Modal -->
-      <div class="modal fade" id="modal-engineering" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalScrollableTitle">Engineering</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                <ul>
-                  <li>Auto-CAD Rendering</li>
-                  <li>Structural Engineering</li>
-                  <li>Soils and Foundation Engineering</li>
-                  <li>Civil / Electrical / Mechanical Engineering</li>
-                  <li>Sanitary / Environmental Engineering</li>
-                  <li>Water Resources Engineering</li>
-                  <li>Agricultural & Irrigation System Engineering</li>
-                  <li>Transport Engineering</li>
-                  <li>Geodetic Engineering</li>
-                  <li>Cost / Contracts & Specification Engineering</li>
-                  <li>Project & Construction Management</li>
-                </ul>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-      </div> <!-- END OF MODAL -->
+#service-page {
+.container{
+.hovereffect {
+height: 250px;
+float: left;
+overflow: hidden;
+position: relative;
+text-align: center;
+cursor: default;
+}
 
+//bd of title per card
+.hovereffect .overlay { 
+width: 100%;
+height: 100%;
+position: absolute;
+overflow: hidden;
+top: 0;
+left: 0;
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
 
+//box when hover
+.hovereffect:hover .overlay { 
+background-color: rgba(170,170,170,0.4);
+}
 
-      <!-- ARCHITECTURE BUTTON -->
-      <div class="col-12 col-lg-6">
-        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-archi">
-          <img class="card-img w-100" src="../assets/images/architecture-min.jpg"  alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">ARCHITECTURE</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-          <!-- Modal -->
-      <div class="modal fade" id="modal-archi" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalScrollableTitle">Architecture</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                <ul>
-                  <li>Building Design</li>
-                  <li>Master Planning</li>
-                  <li>Land Use Planning and Development</li>
-                  <li>Urban and Town Planning</li>
-                  <li>Industrial Estate Planning</li>
-                  <li>Ports Planning</li>
-                </ul>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-      </div> <!-- END OF MODAL -->
+//smoothness when hover
+.hovereffect h2, .hovereffect img { 
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
 
+//bg img
+.hovereffect img { 
+height: 250px;
+width: 400px;
+display: block;
+position: relative;
+-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
 
-    <div class="row mb-3">
-      <!-- MANAGEMENT BUTTON -->
+.hovereffect:hover img {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+}
 
-      <div class="col-12 col-lg-6">
-        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-manage">
-          <img class="card-img w-100" src="../assets/images/management-min.jpg" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">MANAGEMENT</h5>
-          </div>
-        </div>
-      </div>
+//title per card
+.hovereffect h2 { 
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+position: relative;
+font-size: 17px;
+padding: 10px;
+background: rgba(0, 0, 0, 0.6);
+}
 
-            <!-- Modal -->
-      <div class="modal fade" id="modal-manage" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalScrollableTitle">Management</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                <ul>
-                  <li>General Management Construction</li>
-                  <li>Management Review</li>
-                  <li>Project Feasibility Studies</li>
-                  <li>Financial Management</li>
-                  <li>Marketing Economics and Systems</li>
-                  <li>Information Technology</li>
-                  <li>Human Resources, Training and Development</li>
-                  <li>Agricultural and Rural Development</li>
-                  <li>Governance</li>
-                  <li>Small & Medium-Scale Enterprise Development</li>
+.hovereffect a.info {
+display: inline-block;
+text-decoration: none;
+padding: 7px 14px;
+text-transform: uppercase;
+color: #fff;
+border: 1px solid #fff;
+margin: 10px 0 0 0;
+background-color: transparent;
+opacity: 0;
+filter: alpha(opacity=0);
+-webkit-transform: scale(1.5);
+-ms-transform: scale(1.5);
+transform: scale(1.5);
+-webkit-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+font-weight: normal;
+height: 70%;
+width: 80%;
+position: absolute;
+left: 10%;
+padding: 70px;
+}
 
-                </ul>
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-      </div> <!-- END OF MODAL -->
+.hovereffect:hover a.info {
+opacity: 1;
+filter: alpha(opacity=100);
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+background-color: rgba(0,0,0,0.4);
+}
+}
+}
