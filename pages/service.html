@@ -21,11 +21,10 @@
 <body id="service-page">
 
   <!-- NAVIGATON -->
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary sticky-top">
       <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.JPG"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,98 +44,202 @@
         </ul>
       </div>
     </nav>
-  </div>
+
   <!-- END OF NAVIGATON -->
 
-  <!-- START OF BACKGROUND -->
-  <!-- <div class="background">
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="welcome col-10">
-            <h1 class="">
-              Urban Integrated Consultants Incorporated
-            </h1>
-            <p>
-              Engineering Consultancy at your Fingertips.
-            </p>
-
-            <a href="#" class="btn1 btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  -->
-  <!-- END OF BACKGROUND -->
-
-  <!-- <div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Featured Projects</h2>
-      </div>
-    </div>
-  </div>
-</div> -->
 <div class="container">
   <div class="row">
     <div class="col-12">
       <h1 class="pt-3">Our Services</h1>
+          </div>
+  </div>
+</div>
+
+  <!-- START OF CARDS -->
+  <div class="container bg-white">
+    <div class="row mb-3">
+      <!-- ENGINEERING BUTTON -->
+      <div class="col-12 col-lg-6">
+        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-engineering">
+          <img class="card-img w-100" src="../assets/images/engineering-min.jpg"  alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">ENGINEERING</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal-engineering" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Engineering</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <ul>
+                  <li>Auto-CAD Rendering</li>
+                  <li>Structural Engineering</li>
+                  <li>Soils and Foundation Engineering</li>
+                  <li>Civil / Electrical / Mechanical Engineering</li>
+                  <li>Sanitary / Environmental Engineering</li>
+                  <li>Water Resources Engineering</li>
+                  <li>Agricultural & Irrigation System Engineering</li>
+                  <li>Transport Engineering</li>
+                  <li>Geodetic Engineering</li>
+                  <li>Cost / Contracts & Specification Engineering</li>
+                  <li>Project & Construction Management</li>
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- END OF MODAL -->
+
+
+
+      <!-- ARCHITECTURE BUTTON -->
+      <div class="col-12 col-lg-6">
+        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-archi">
+          <img class="card-img w-100" src="../assets/images/architecture-min.jpg"  alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">ARCHITECTURE</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          <!-- Modal -->
+      <div class="modal fade" id="modal-archi" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Architecture</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <ul>
+                  <li>Building Design</li>
+                  <li>Master Planning</li>
+                  <li>Land Use Planning and Development</li>
+                  <li>Urban and Town Planning</li>
+                  <li>Industrial Estate Planning</li>
+                  <li>Ports Planning</li>
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- END OF MODAL -->
+
+
+    <div class="row mb-5">
+      <!-- MANAGEMENT BUTTON -->
+
+      <div class="col-12 col-lg-6">
+        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-manage">
+          <img class="card-img w-100" src="../assets/images/management-min.jpg" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">MANAGEMENT</h5>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal -->
+      <div class="modal fade" id="modal-manage" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Management</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <ul>
+                  <li>General Management Construction</li>
+                  <li>Management Review</li>
+                  <li>Project Feasibility Studies</li>
+                  <li>Financial Management</li>
+                  <li>Marketing Economics and Systems</li>
+                  <li>Information Technology</li>
+                  <li>Human Resources, Training and Development</li>
+                  <li>Agricultural and Rural Development</li>
+                  <li>Governance</li>
+                  <li>Small & Medium-Scale Enterprise Development</li>
+
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- END OF MODAL -->
+
+      <!-- PLANNING BUTTON -->     
+      <div class="col-12 col-lg-6">
+        <div class="card-btn bg-dark text-white" data-toggle="modal" data-target="#modal-plan">
+          <img class="card-img w-100" src="../assets/images/planning-min.jpg"  alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PLANNING</h5>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal -->
+      <div class="modal fade" id="modal-plan" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Planning</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                <ul>
+                  <li>Recreation and Tourism Planning</li>
+                  <li>Social Planning and Community Consultation</li>
+                  <li>Environmental Engineering and Management</li>
+                  <li>Strategic Planning</li>
+                  <li>Landscape Architecture and Design</li>
+                  <li>Geographic Information System</li>
+                  <li>Environmental Planning</li>
+                  <li>Development Planning</li>
+                </ul>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- END OF MODAL -->
     </div>
   </div>
 </div>
-  <!-- START OF CARDS -->
-  <div class="container1">
-    <div class="row">
-      <div class="col-12">
-        <div class="card-deck1">
-          <div class="card">
-            <img src="../assets/images/engineering-min.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Project 1</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/images/architecture-min.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Project 2</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="container2">
-    <div class="row">
-      <div class="col-12">
-        <div class="card-deck2">
-          <div class="card">
-            <img src="../assets/images/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Project 1</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../assets/images/planning.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center">Project 2</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- end div cards -->
+<!-- END OF CARDS -->
 
   <!-- FOOTER -->
   <footer class="footer bg-primary text-white py-2">
     <div class="container">
-      <div class="row">
+      <div class="rowfoot">
         <div class="text col-12 ">
           <p class="reserved">
             All rights reserved &copy; 2019.
