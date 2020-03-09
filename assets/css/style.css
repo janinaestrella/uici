@@ -10275,7 +10275,7 @@ body .main-container {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-#contact-page #contact-page div.info {
+#contact-page div.info {
   display: block;
   background-color: #F3FCF0;
   border: 1px solid #eceff1;
@@ -10283,7 +10283,7 @@ body .main-container {
   padding: 2%;
   border-radius: 3px;
 }
-#contact-page #contact-page div.info i.fas {
+#contact-page div.info i.fas {
   font-size: 20px;
 }
 
