@@ -140,21 +140,21 @@ body{
 
 
 body {
-	// background-color: $graywhite;
+	background-image: url("./../images/bg.jpg");
 	position: relative;
-	// background: url("./../images/bg.jpg");
+  	height: 100%; 
 
-	 /* The image used */
-  background-image: url("./../images/bg.jpg");
-
-  /* Set a specific height */
-  height: 100px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  	.main-container{
+  		// position: relative;
+  		min-height: 100vh;
+  		padding-bottom: 2.5rem;
+  		margin-bottom: 2.5rem;
+  	}	
 
 }
 
@@ -174,12 +174,16 @@ h1.landing{
 .footer{
 	position:absolute;
     width:100%;
-	margin:0; padding:0;
+  	bottom: 0;
+  	padding-bottom: 2.5rem;
 	
 		.container .text {
 			display: flex;
 		   	justify-content: space-between;
-		   
+
+		   	p.reserved{
+		   		font-size: 11px;
+		   	
 			   .icons{
 				   font-size: 20px;
 				   color: white;
@@ -196,10 +200,15 @@ h1.landing{
 			}
 		}
 
-		
+		}
 	}
 
 // INDEX
+#landing-page.main-containerindex{
+  		// position: relative;
+  		min-height: 100vh;
+  	}  
+
 .background{
 	background-image: url("./../images/landing.jpg");
 	top: 0;
@@ -214,6 +223,10 @@ h1.landing{
 	.welcome{
 		margin-top: 50px;
 	}
+
+	.tagline{
+		font-size: 18px;
+	}
 }
 
 // ABOUT PAGE
@@ -226,6 +239,17 @@ h1.landing{
 		.card-img{
 		width: 100px;
 }	
+
+// #about-page .main-containerabt{
+//   		position: relative;
+//   		min-height: 100vh;
+//   		padding-bottom: 2.5rem;
+//   		// margin-bottom: 2.5rem;
+  	
+ //  	.row.clients{
+	// margin-bottom: 50px
+// }
+// }
 		
 // SERVICE PAGE
 #service-page .container{
@@ -397,14 +421,29 @@ h1.landing{
 		border-radius: .25em;
 	  }
 	
+	img.card-img-top{
+		height: 30vh;
+		object-fit: cover;
+	}
 	}
 
 // CONTACT PAGE
+// #contact-page.main-containerctc{
+// 	  		position: relative;
+//   		min-height: 100vh;
+//   		padding-bottom: 2.5rem;
+//   		// margin-bottom: 2.5rem;
+// }
+
 #contact-page .mapouter{
-	position:relative;
-	text-align:center;
-	height:505px;
-	width:100%;
+// 	position:relative;
+// 	text-align:center;
+// 	height:505px;
+// 	width:100%;
+
+// 	.row.contacts{
+// 	margin-bottom: 50px
+// }
 
 	.gmap_canvas {
 		overflow:hidden;
@@ -425,7 +464,7 @@ h1.landing{
 	display: block;
 	// margin-top: 2em;
 }
-  
+
 
 form.contact input, textarea {
 	 border-radius: 2px;

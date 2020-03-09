@@ -9970,16 +9970,18 @@ body {
 }
 
 body {
-  position: relative;
-  /* The image used */
   background-image: url("./../images/bg.jpg");
-  /* Set a specific height */
-  height: 100px;
-  /* Create the parallax scrolling effect */
+  position: relative;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+body .main-container {
+  min-height: 100vh;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 h1 {
@@ -9997,23 +9999,30 @@ h1.landing {
 .footer {
   position: absolute;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  bottom: 0;
+  padding-bottom: 2.5rem;
 }
 .footer .container .text {
   display: flex;
   justify-content: space-between;
 }
-.footer .container .text .icons {
+.footer .container .text p.reserved {
+  font-size: 11px;
+}
+.footer .container .text p.reserved .icons {
   font-size: 20px;
   color: white;
 }
-.footer .container .text .icons .fab {
+.footer .container .text p.reserved .icons .fab {
   margin: 0 2px;
   transition: all 0.2s ease-in-out;
 }
-.footer .container .text .icons .fab:hover {
+.footer .container .text p.reserved .icons .fab:hover {
   transform: scale(1.5);
+}
+
+#landing-page.main-containerindex {
+  min-height: 100vh;
 }
 
 .background {
@@ -10030,6 +10039,9 @@ h1.landing {
 }
 .jumbotron .welcome {
   margin-top: 50px;
+}
+.jumbotron .tagline {
+  font-size: 18px;
 }
 
 #about-page .clientcard {
@@ -10183,13 +10195,11 @@ h1.landing {
   border: 1px solid whitesmoke;
   border-radius: 0.25em;
 }
-
-#contact-page .mapouter {
-  position: relative;
-  text-align: center;
-  height: 505px;
-  width: 100%;
+#projects-page .container img.card-img-top {
+  height: 30vh;
+  object-fit: cover;
 }
+
 #contact-page .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
