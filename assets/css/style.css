@@ -9886,8 +9886,6 @@ h1 {
 body {
   font-family: "Roboto", sans-serif;
   background-image: url("./../images/bg.jpg");
-  position: relative;
-  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -9895,8 +9893,6 @@ body {
 }
 body .main-container {
   min-height: 100vh;
-  padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .navbar img {
@@ -9913,7 +9909,6 @@ body .main-container {
 }
 .navbar .navbar-nav .nav-link.active {
   color: white;
-  border-bottom: 3px solid white;
 }
 .navbar .navbar-nav * {
   box-sizing: border-box;
@@ -9989,18 +9984,13 @@ body .main-container {
   background-color: #F3FCF0;
 }
 
-.footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  padding-bottom: 2.5rem;
-}
 .footer .container .text {
   display: flex;
   justify-content: space-between;
 }
 .footer .container .text p.reserved {
   font-size: 11px;
+  padding-top: 10px;
 }
 .footer .container .text .icons {
   font-size: 20px;
