@@ -10038,6 +10038,9 @@ body .main-container {
   text-align: justify;
   text-justify: inter-word;
 }
+#about-page #logos {
+  background-color: white;
+}
 #about-page .card-img {
   width: 30%;
   height: auto;
