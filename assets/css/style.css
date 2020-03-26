@@ -10139,6 +10139,9 @@ body .main-container {
   height: 50vh;
   object-fit: cover;
 }
+#projects-page .container .fprojects {
+  padding: 0 2rem;
+}
 #projects-page .container .modal, #projects-page .container body.modal-open {
   padding-right: 0 !important;
 }

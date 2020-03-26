@@ -353,13 +353,18 @@ body{
 #projects-page{
 
 	.container{
+		
 		.carousel-inner{
 			img{
 				height: 50vh;
 				object-fit: cover;
 			}
 		}
-
+		
+		.fprojects{
+			padding: 0 2rem;
+		}
+		
 		.modal,body.modal-open {
 			padding-right: 0!important
 		}
