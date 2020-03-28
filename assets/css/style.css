@@ -10007,6 +10007,9 @@ body .main-container {
   transform: scale(1.5);
 }
 
+#landing-page {
+  overflow: hidden;
+}
 #landing-page .landing {
   text-align: start;
 }
@@ -10287,6 +10290,10 @@ body .main-container {
   #logos > div img {
     width: 80%;
     align-items: center;
+  }
+
+  #landing-page .jumbotron .welcome {
+    margin-top: 20px;
   }
 }
 
