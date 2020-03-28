@@ -69,7 +69,7 @@ body{
 
 	.navbar-nav * {
 		box-sizing: border-box;
-		transition: all .35s ease;
+		transition: all .10s ease;
 	}
 
 	.navbar-nav li {
@@ -93,7 +93,7 @@ body{
 		height: 14px;
 		width: 14px;
 		position: absolute;
-		transition: all .35s ease;
+		transition: all .10s ease;
 		opacity: 0;
 	}
 
